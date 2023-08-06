@@ -1,0 +1,12 @@
+---
+  instances: 1
+  provider: virtualbox
+  name_prefix: node0
+  name_suffix: .multicloud.com
+  ip_prefix: 192.168.0.20
+  storage_devices: 1
+  disk_size: 60G
+  memory: 2048
+  cpus: 2
+  box: bento/ubuntu-20.04
+  path: bootstrap.sh
