@@ -23,8 +23,8 @@ Vagrant.configure("2") do |config|
       #node.ssh.private_key_path = "~/.ssh/id_rsa"
       node.ssh.forward_agent = true
 
-      #node.vm.network  "public_network", bridge: "bridge0", ip: "#{ip_prefix}#{i}"
-      node.vm.network  "public_network",bridge: "Intel(R) 82579LM Gigabit Network Connection", ip: "#{ip_prefix}#{i}"
+      node.vm.network  "public_network", bridge: "bridge0", ip: "#{ip_prefix}#{i}"
+      #node.vm.network  "public_network",bridge: "Intel(R) 82579LM Gigabit Network Connection", ip: "#{ip_prefix}#{i}"
       node.vm.provider "#{provider}" do |vm|
         vm.memory = "#{memory}"
         vm.cpus = "#{cpus}"
